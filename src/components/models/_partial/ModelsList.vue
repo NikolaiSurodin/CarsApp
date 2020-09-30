@@ -1,8 +1,14 @@
 <template>
   <div>
-    <models-list-item v-for="item in items" :key="item.id" :item="item" :current="current">
+    <h4>Models list</h4>
+    <ul>
+      <li>
+        <models-list-item v-for="item in items" :key="item.id" :item="item" :current="current">
 
-    </models-list-item>
+        </models-list-item>
+      </li>
+    </ul>
+
   </div>
 </template>
 

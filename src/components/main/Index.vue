@@ -1,8 +1,17 @@
 <template>
+
   <div>
+    <div class="header">
+      <h1>Cars Application </h1>
+
+    </div>
+
+    <hr>
+
     <cars-list :items="cars"></cars-list>
 
   </div>
+
 </template>
 
 <script>
@@ -27,5 +36,7 @@ export default {
 </script>
 
 <style scoped>
-
+.header {
+  text-align: center;
+}
 </style>

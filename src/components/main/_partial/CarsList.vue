@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p> Выберите интересущую вас марку авто</p>
     <cars-list-item v-for="item in items" :key="item.id" :item="item">
 
     </cars-list-item>

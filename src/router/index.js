@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import HelloWorld from '@/components/HelloWorld'
 import Main from '@/components/main/Index'
 import Models from '@/components/models/Index'
 import Model from '@/components/model/Index'
@@ -20,14 +19,14 @@ export default new Router({
     {
       path: '/:name',
       component: {
-        render(c) {
+        render (c) {
           return c('router-view')
         }
       },
       children: [
         {
           path: '',
-          component: Models,
+          component: Models
         },
         {
           path: ':model',

@@ -1,9 +1,13 @@
 <template>
-  <div>{{ $route.params.name }}
+  <div>
+  <div class="header">{{ $route.params.name }}</div>
+    <router-link to="/"> home</router-link>
+<p>models index</p>
+    <hr>
     <models-list :items="models" :current="car"></models-list>
     <router-view></router-view>
-
   </div>
+
 </template>
 
 <script>
@@ -29,8 +33,14 @@ export default {
   }
 
 }
+
 </script>
 
 <style scoped>
+.header{
+  color: darkorange;
+  text-align: center;
+  font-size: 40px;
+}
 
 </style>
